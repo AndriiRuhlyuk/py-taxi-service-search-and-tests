@@ -18,7 +18,7 @@ class PublicTest(TestCase):
         self.assertNotEqual(response_driver.status_code, 200)
 
     def test_login_manufacturer_required(self):
-        response_manufacturer = self.client.get(DRIVER_URL)
+        response_manufacturer = self.client.get(MANUFACTURER_URL)
         self.assertNotEqual(response_manufacturer.status_code, 200)
 
 
